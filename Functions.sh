@@ -8,6 +8,4 @@ install_package() {
   fi
 }
 
-# Call function
-install_package git
-install_package mysql
+
