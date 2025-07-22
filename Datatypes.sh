@@ -4,6 +4,6 @@
 
 Names=("Ram" "Raj" "Sirish")
 
-echo "Print First Name is :${Name[0]}"
-echo "Print Last Name is  :${Name[2]}"
-echo "Print All Names are :${Name[@]}"
+echo "Print First Name is :${Names[0]}"
+echo "Print Last Name is  :${Names[2]}"
+echo "Print All Names are :${Names[@]}"
