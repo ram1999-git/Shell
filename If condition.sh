@@ -2,9 +2,10 @@
 
 Number=$1
 
-If[$Number -gt 10]; then
-  echo "Given $Number greater than 10"
+if [ "$Number" -gt 10 ]; then
+  echo "Given $Number is greater than 10"
 else
-  echo "Given $Number lesser than 10"
-fi 
+  echo "Given $Number is lesser than or equal to 10"
+fi
+
 
