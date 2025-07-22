@@ -9,10 +9,17 @@ else
 echo "you are super user."
 fi
 
-for i in $@
+for i in "$@"
 do
-echo "All packages: $i"
-done
+  echo "Installing package: $i"
+  dnf install -y "$i"
 
+  if [ $? -ne 0 ]; then
+    echo "\e[31m Failed to install $i"
+    exit 1
+  else
+    echo "\e[32m $i installed successfully"
+  fi
+done
 
  
