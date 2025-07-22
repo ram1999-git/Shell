@@ -8,3 +8,5 @@ if [ $userid -ne 0 ]; then
 else
   echo "You are super user"
 fi
+
+dnf install mysql -y
